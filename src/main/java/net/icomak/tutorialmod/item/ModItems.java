@@ -21,9 +21,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ALEXANDRITE = ITEMS.register("raw_alexandrite",
             () -> new Item(new Item.Properties()));
 
-
-
-
+    // Carcastagno shard item
+    public static final RegistryObject<Item> CARCASTAGNO_SHARD = ITEMS.register("carcastagno_shard",
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
