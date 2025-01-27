@@ -2,6 +2,7 @@ package net.icomak.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.icomak.tutorialmod.block.ModBlocks;
+import net.icomak.tutorialmod.item.ModCreativeModeTabs;
 import net.icomak.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -17,7 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-// Very important comment
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
@@ -33,6 +34,10 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+
+        //Creative Tab for mods items
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
