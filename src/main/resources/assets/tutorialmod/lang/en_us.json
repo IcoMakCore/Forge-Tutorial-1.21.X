@@ -5,8 +5,12 @@
 
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
+  "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
+  "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+  "block.tutorialmod.carcastagno_ore": "Carcastagno Ore",
+
 
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
-  "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks"
-
+  "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
+  "creativetab.tutorialmod.carcastagno_items": "Carcastagno Items"
 }

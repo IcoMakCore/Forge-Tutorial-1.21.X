@@ -28,6 +28,7 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    // ALEXANDRITE BLOCKS
     public static final RegistryObject<CreativeModeTab> ALEXANDRITE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("alexandrite_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ALEXANDRITE_BLOCK.get()))
                     // This tab is going to appear before the blocks tab
@@ -40,7 +41,30 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
 
+                        output.accept(ModBlocks.ALEXANDRITE_ORE.get());
+                        output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
+
+
                     }).build());
+
+    // CARCASTAGNO ITEMS
+    public static final RegistryObject<CreativeModeTab> CARCASTAGNO_ITEMS_TAB = CREATIVE_MODE_TABS.register("carcastagno_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CARCASTAGNO_SHARD.get()))
+                    // This tab is going to appear before the blocks tab
+                    .withTabsBefore(ALEXANDRITE_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.tutorialmod.carcastagno_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        //Here add items to be displayed
+
+                        // CARCASTAGNO
+                        output.accept(ModItems.CARCASTAGNO_SHARD.get());
+
+                    }).build());
+
+
+
+
+
 
 
 
