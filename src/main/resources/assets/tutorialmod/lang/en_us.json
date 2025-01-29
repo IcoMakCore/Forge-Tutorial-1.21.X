@@ -3,6 +3,8 @@
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite",
   "item.tutorialmod.carcastagno_shard": "Carcastagno Shard",
 
+  "item.tutorialmod.chisel": "Chisel",
+
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
@@ -13,4 +15,6 @@
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
   "creativetab.tutorialmod.carcastagno_items": "Carcastagno Items"
+
+
 }

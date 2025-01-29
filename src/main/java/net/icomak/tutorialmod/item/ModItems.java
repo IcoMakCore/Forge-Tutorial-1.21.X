@@ -1,6 +1,7 @@
 package net.icomak.tutorialmod.item;
 
 import net.icomak.tutorialmod.TutorialMod;
+import net.icomak.tutorialmod.item.custom.ChiselItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,6 +25,10 @@ public class ModItems {
     // Carcastagno shard item
     public static final RegistryObject<Item> CARCASTAGNO_SHARD = ITEMS.register("carcastagno_shard",
             () -> new Item(new Item.Properties()));
+
+    // CHISEL ITEM
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
+            () -> new ChiselItem(new Item.Properties().durability(32)));
 
 
     public static void register(IEventBus eventBus) {

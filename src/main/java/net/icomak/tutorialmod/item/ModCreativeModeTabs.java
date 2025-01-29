@@ -26,6 +26,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE.get());
                         output.accept(ModItems.RAW_ALEXANDRITE.get());
 
+                        output.accept(ModItems.CHISEL.get());
+
                     }).build());
 
     // ALEXANDRITE BLOCKS
