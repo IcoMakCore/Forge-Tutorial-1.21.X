@@ -1,6 +1,7 @@
 package net.icomak.tutorialmod.block;
 
 import net.icomak.tutorialmod.TutorialMod;
+import net.icomak.tutorialmod.block.custom.MagicBlock;
 import net.icomak.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -36,9 +37,12 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-        public static final RegistryObject<Block> CARCASTAGNO_ORE = registerBlock("carcastagno_ore",
+    public static final RegistryObject<Block> CARCASTAGNO_ORE = registerBlock("carcastagno_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 
