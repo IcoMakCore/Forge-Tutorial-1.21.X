@@ -14,7 +14,6 @@ if you want to help me you can add me on discord or even do commits there.
 
 
 ## ⬇️ Download & Install
-### For Windows
 The Download of the Mod Is coming soon.
 
 
