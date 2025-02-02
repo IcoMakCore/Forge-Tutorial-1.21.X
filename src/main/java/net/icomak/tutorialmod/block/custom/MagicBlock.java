@@ -1,6 +1,7 @@
 package net.icomak.tutorialmod.block.custom;
 
 import net.icomak.tutorialmod.item.ModItems;
+import net.icomak.tutorialmod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -39,8 +40,8 @@ public class MagicBlock extends Block {
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
         if (pEntity instanceof ItemEntity itemEntity){
 
-            // Transforms Raw Alexandrite in Diamond
-            if(itemEntity.getItem().getItem() == ModItems.RAW_ALEXANDRITE.get()){
+            // Items in transformable_items will transform in diamonds
+            if(isValidItem(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
 
@@ -56,6 +57,11 @@ public class MagicBlock extends Block {
 
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    // Items in transformable_items will transform in diamonds
+    private boolean isValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 
     // Create the key to translate it in the lang file and write what do you want
