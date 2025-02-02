@@ -1,4 +1,4 @@
-package net.icomak.tutorialmod.block.custom;
+package net.icomak.tutorialmod.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
